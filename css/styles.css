@@ -1,0 +1,87 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  background-color: #DAF0F0;
+}
+
+/* <!-- Wavy text effect credit to Emadamerho Nefe; https://codepen.io/nefejames/pen/gbYYdpK --> */
+
+/* <!-- Information about span:nth-child; https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child --> */
+
+.wave-text span {
+  display: inline-block;
+  font-size: 2.8rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(4n + 1) {
+  animation-delay: 0.3s;
+}
+
+.wave-text span:nth-child(4n + 2) {
+  animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(4n + 3) {
+  animation-delay: 0.1s;
+}
+
+.wave-text span:nth-child(4n + 4) {
+  animation-delay: 0s;
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+a {
+  color: #6964d1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: left;
+}
+
+nav>a {
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #6964d1;
+  border-radius: 20px;
+  padding: 15px 15px;
+  background: #F7F6E6;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav>a:hover {
+  background: #6964d1;
+  transition: all 300ms ease-in;
+  color: #fff;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.img_card {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
