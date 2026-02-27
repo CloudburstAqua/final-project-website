@@ -4,6 +4,17 @@ body {
   font-weight: <weight>;
   font-style: normal;
   background-color: #DAF0F0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.anv-bg {
+  animation: anv-bg-color 10s infinite;
+}
+
+
+h1 {
+  margin-top: 30px;
 }
 
 /* <!-- Wavy text effect credit to Emadamerho Nefe; https://codepen.io/nefejames/pen/gbYYdpK --> */
@@ -84,4 +95,16 @@ nav>a:hover {
   margin: auto;
   margin-bottom: 20px;
   border-radius: 8px;
+}
+
+@keyframes anv-bg-color {
+  0% {
+    background-color: #bbde76;
+  }
+  50% {
+    background-color: #f0db73;
+  }
+  100%{
+    background-color: #bbde76;
+  }
 }
