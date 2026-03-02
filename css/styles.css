@@ -114,78 +114,27 @@ nav>a:hover {
   }
 }
 
+/* flex grid of cards */
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5%;
 }
 
-/* bg animations */
-@keyframes anv-bg-color {
-  0% {
-    background-color: #ccf0ad;
+@media (max-width: 850px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(10, auto);
+      grid-gap: 28px;
+      align-items: center;
+    }
   }
 
-  50% {
-    background-color: #ebdc9b;
+@media (max-width: 560px) {
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: minmax(10, auto);
+      grid-gap: 28px;
+      align-items: center;
+    }
   }
-
-  100% {
-    background-color: #ccf0ad;
-  }
-}
-
-@keyframes uki-bg-color {
-  0% {
-    background-color: #bec5fa;
-  }
-
-  50% {
-    background-color: #b0d0eb;
-  }
-
-  100% {
-    background-color: #bec5fa;
-  }
-}
-
-/* background image + their effects */
-.uki_bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  background-image: url("../img/uki/ukiyo-e_bg.jpeg");
-  height: 100vh;
-  width: 100%;
-
-  filter: blur(5px);
-  -webkit-filter: blur(10px);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  animation: uki-bg-color 20s infinite;
-  background-blend-mode: overlay;
-}
-
-.anv_bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  background-image: url("../img/anv/anv-bg.webp");
-  height: 100vh;
-  width: 100%;
-
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  animation: anv-bg-color 20s infinite;
-  background-blend-mode: overlay;
-}
