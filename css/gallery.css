@@ -13,6 +13,7 @@ body {
 }
 
 .row {
+  align-items: start;
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
@@ -31,6 +32,7 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  border-radius: 8px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
