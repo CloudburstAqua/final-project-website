@@ -71,7 +71,7 @@
 
 @keyframes gru-bg-color {
   0% {
-    background-color: #f3ffc9;
+    background-color: #a3a3a3;
   }
 
   50% {
@@ -79,7 +79,7 @@
   }
 
   100% {
-    background-color: #f3ffc9;
+    background-color: #a3a3a3;
   }
 }
 
@@ -92,16 +92,17 @@
   background-image: url("../img/uki/ukiyo-e_bg.jpeg");
   height: 100vh;
   width: 100%;
+  transform: scale(1.2);
 
   filter: blur(3px);
-  -webkit-filter: blur(5px);
+  -webkit-filter: blur(2px);
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
   animation: uki-bg-color 20s infinite;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
 }
 
 .anv_bg-image {
@@ -113,15 +114,15 @@
   height: 100vh;
   width: 100%;
 
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
   animation: anv-bg-color 20s infinite;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
 }
 
 .epho_bg-image {
@@ -134,15 +135,15 @@
   height: 100vh;
   width: 100%;
 
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  filter: blur(2px);
+  -webkit-filter: blur(1px);
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
   animation: epho-bg-color 20s infinite;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
 }
 
 .pm_bg-image {
@@ -155,14 +156,14 @@
   width: 100%;
 
   filter: blur(3px);
-  -webkit-filter: blur(3px);
+  -webkit-filter: blur(2px);
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
   animation: pm-bg-color 20s infinite;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
 }
 
 .bau_bg-image {
@@ -182,7 +183,7 @@
   background-size: cover;
   z-index: -1;
   animation: bau-bg-color 20s infinite;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
 }
 
 .gru_bg-image {
@@ -202,5 +203,5 @@
   background-size: cover;
   z-index: -1;
   animation: gru-bg-color 20s infinite;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
 }
