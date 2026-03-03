@@ -7,6 +7,26 @@ body {
   margin: 3% 3% 3% 3%;
 }
 
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  width: 70px;
+  margin: 5px;
+  border: 1px solid #6964d1;
+  border-radius: 20px;
+  padding: 5px 5px;
+  background: #F7F6E6; 
+}
+
+button:hover {
+  background: #6964d1;
+  transition: all 300ms ease-in;
+  color: #fff;
+  box-shadow: 5px 5px 5px lightblue;
+}
+
 .inknut-antiqua-light {
   font-family: "Inknut Antiqua", serif;
   font-weight: 300;

@@ -69,6 +69,20 @@
   }
 }
 
+@keyframes gru-bg-color {
+  0% {
+    background-color: #f3ffc9;
+  }
+
+  50% {
+    background-color: #c2edc3;
+  }
+
+  100% {
+    background-color: #f3ffc9;
+  }
+}
+
 /* background image + their effects */
 .uki_bg-image {
   position: fixed;
@@ -167,6 +181,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  animation: pm-bg-color 20s infinite;
+  animation: bau-bg-color 20s infinite;
+  background-blend-mode: overlay;
+}
+
+.gru_bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/gru/david_carson_bg.jpg");
+  height: 100vh;
+  width: 100%;
+
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  animation: gru-bg-color 20s infinite;
   background-blend-mode: overlay;
 }
