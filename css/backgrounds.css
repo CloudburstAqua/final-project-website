@@ -41,6 +41,34 @@
   }
 }
 
+@keyframes pm-bg-color {
+  0% {
+    background-color: #c9f6ff;
+  }
+
+  50% {
+    background-color: #e8c9ff;
+  }
+
+  100% {
+    background-color: #c9f6ff;
+  }
+}
+
+@keyframes bau-bg-color {
+  0% {
+    background-color: #ffc9ce;
+  }
+
+  50% {
+    background-color: #c9ffda;
+  }
+
+  100% {
+    background-color: #ffc9ce;
+  }
+}
+
 /* background image + their effects */
 .uki_bg-image {
   position: fixed;
@@ -84,6 +112,7 @@
 
 .epho_bg-image {
   position: fixed;
+  transform: scale(1.2);
   top: 0;
   left: 0;
 
@@ -99,5 +128,45 @@
   background-size: cover;
   z-index: -1;
   animation: epho-bg-color 20s infinite;
+  background-blend-mode: overlay;
+}
+
+.pm_bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/pm/longhauser_bg.webp");
+  height: 100vh;
+  width: 100%;
+
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  animation: pm-bg-color 20s infinite;
+  background-blend-mode: overlay;
+}
+
+.bau_bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/bau/bauhaus_bg.png");
+  height: 100vh;
+  width: 100%;
+
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  animation: pm-bg-color 20s infinite;
   background-blend-mode: overlay;
 }
