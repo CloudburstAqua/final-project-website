@@ -33,7 +33,7 @@
   }
 
   50% {
-    background-color: #f0f0f0;
+    background-color: #e6d2cf;
   }
 
   100% {
@@ -43,29 +43,29 @@
 
 @keyframes pm-bg-color {
   0% {
-    background-color: #c9f6ff;
+    background-color: #f4d9fa;
   }
 
   50% {
-    background-color: #e8c9ff;
+    background-color: #dfcfff;
   }
 
   100% {
-    background-color: #c9f6ff;
+    background-color: #f4d9fa;
   }
 }
 
 @keyframes bau-bg-color {
   0% {
-    background-color: #e8d1c8;
+    background-color: #f2f2c7;
   }
 
   50% {
-    background-color: #e8c8de;
+    background-color: #d8e7ed;
   }
 
   100% {
-    background-color: #e8d1c8;
+    background-color: #f2f2c7;
   }
 }
 
@@ -75,7 +75,7 @@
   }
 
   50% {
-    background-color: #c2edc3;
+    background-color: #ffd1c2;
   }
 
   100% {
