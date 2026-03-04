@@ -59,5 +59,33 @@
     margin-bottom: 50px;">
       <a href="../bio-pages/bau.html" target="_self"><button>back</button></a>
     </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+      const images = document.querySelectorAll('.image-hover-effect img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+
+      images.forEach(img => {
+        img.addEventListener('click', function (e) {
+          e.stopPropagation();
+          lightbox.style.display = 'flex';
+          lightboxImg.src = this.src;
+        });
+      });
+
+      function closeLightbox () {
+        lightbox.style.display = 'none';
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        }
+      });
+    </script>
   </body>
 </html>
